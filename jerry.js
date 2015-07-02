@@ -18,9 +18,9 @@ program
 //.option('scafford' , 'Make jerryJS structure')
 //    .option('module', 'Make a module ')
 program
-    .command('scafford')
+    .command('scaffold')
     .description('Make jerryJS structure')
-    .action(buildScafford);
+    .action(buildScaffold);
 program
     .command('module [params]')
     .description('Make a module ')
@@ -107,7 +107,7 @@ function buildModule(params,option){
     }
 }
 
-function buildScafford(){
+function buildScaffold(){
     mkdir(dir + '/modules');
     mkdir(dir + '/config');
     mkdir(dir + '/public');
